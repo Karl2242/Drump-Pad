@@ -19,12 +19,12 @@ function handlePressKeyPlaySound(event) {
 
 
   console.log(register);
-  
+  let time = Date.now()
   
   if (recording === true) {
 
     if(chekCode != 82){
-      register.push(chekCode);
+      register.push({"key":chekCode, "time": time});
 
   }}
 }
